@@ -9,6 +9,42 @@ html {
     background: #f6f7ff;
 }
 
+.bi {
+    color: white;
+    font-family: bootstrap-icons !important;
+}
+
+.section {
+    background-color: #4a63e7;
+    box-shadow: 0px 0px 10px 0px #4A63E7;
+    -webkit-box-shadow: 0px 0px 10px 0px #4A63E7;
+    color: white;
+    width: fit-content;
+    position: relative;
+    left: 3.8rem;
+    top: 5rem;
+    display: flex;
+    flex-flow: row;
+    padding: .5rem;
+    border-radius: 3rem 0rem 0rem 3rem;
+    font-weight: bold;
+    align-items: center;
+    transition: all .255s ease-in;
+}
+
+.section:hover {
+    left: 0;
+
+}
+
+#section-span {
+    padding: inherit;
+}
+
+.section i {
+    font-size: 2.5rem;
+}
+
 .main {
     color: white;
     background-color: #4a63e7;
