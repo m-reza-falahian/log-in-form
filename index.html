@@ -12,7 +12,12 @@
 </head>
 
 <body dir="rtl">
-    <section class="section">
+    <article class="help-article" id="help-art">
+        <i class="bi bi-x-circle-fill help-bi-x" onclick="hide_help_article()"></i>
+        <h3>راهنما</h3>
+        <p>برای ورود به طورآزمایشی : <br>نام کاربری = user <br> رمز ورود = a1b2c3</p>
+    </article>
+    <section class="section" onclick="show_help_article()">
         <span id="section-span">راهنما</span>
         <i class="bi bi-question-circle"></i>
     </section>
@@ -32,6 +37,7 @@
         </div>
     </main>
     <footer class="footer">
+        <p>طراحی و توسعه یافته توسط Mr.F</p>
     </footer>
 </body>
 <script src="./js/main.js"></script>
