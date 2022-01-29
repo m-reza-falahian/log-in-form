@@ -16,6 +16,9 @@
         <i class="bi bi-x-circle-fill help-bi-x" onclick="hide_help_article()"></i>
         <h3>راهنما</h3>
         <p>برای ورود به طورآزمایشی : <br>نام کاربری = user <br> رمز ورود = a1b2c3</p>
+        <br>
+        <br>
+        <p>برای ورود به طورآزمایشی : <br>نام کاربری = admin <br> رمز ورود = a1b2c3</p>
     </article>
     <section class="section" onclick="show_help_article()">
         <span id="section-span">راهنما</span>
@@ -26,7 +29,7 @@
             <h1>فرم ورود</h1>
         </div>
         <div class="form">
-            <form action="#" method="post">
+            <form action="./php/main.php" method="post">
                 <label for="user-name">نام کاربری</label>
                 <input type="text" name="user-name" title="نام کاربری" required>
                 <label for="password">رمز ورود</label>
