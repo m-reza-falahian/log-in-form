@@ -7,13 +7,12 @@
     <title>ورود</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://gitcdn.ir/library/PersianFonts/vazir/style.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css">
 </head>
 
 <body dir="rtl">
-    <article class="help-article" id="help-art">
-        <i class="bi bi-x-circle-fill help-bi-x" onclick="hide_help_article()"></i>
+    <article class="help-article" id="help-art" title="راهنما">
+        <i id="help-art-x" class="bi bi-x-circle-fill help-bi-x" onclick="hide_help_article()" onmouseover="change_help_art_x()" onmouseout="unchange_help_art_x()" title="بستن"></i>
         <h3>راهنما</h3>
         <p>برای ورود به طورآزمایشی : <br>نام کاربری = user <br> رمز ورود = a1b2c3</p>
         <br>
@@ -31,9 +30,9 @@
         <div class="form">
             <form action="./php/main.php" method="post">
                 <label for="user-name">نام کاربری</label>
-                <input type="text" name="user-name" title="نام کاربری" required>
+                <input type="text" name="user-name" title="نام کاربری" placeholder="نام کاربری خود را وارد کنید" required>
                 <label for="password">رمز ورود</label>
-                <input type="password" name="password" title="رمز ورود" required>
+                <input type="password" name="password" title="رمز ورود" placeholder="رمزعبور خود را وارد کنید" required>
                 <span><a href="">فراموشی رمزعبور</a></span>
                 <input type="submit" value="ورود" class="submit" title="ورود">
             </form>

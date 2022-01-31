@@ -2,6 +2,18 @@
 $connect = mysqli_connect("localhost:3306", "root", "");
 $create_db = "CREATE DATABASE log_in";
 
+if (!$connect) {
+    setcookie(
+        'log_in_status',
+        'mysql_is_not_conected',
+        [
+            'expires' => time() + '3600',
+            'path' => '/'
+        ]
+    );
+    header("Location:http://localhost:7000");
+}
+
 mysqli_query($connect, $create_db);
 
 mysqli_select_db($connect, "log_in");
