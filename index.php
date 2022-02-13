@@ -38,9 +38,6 @@
             </form>
         </div>
     </main>
-    <footer class="footer">
-        <p>طراحی و توسعه یافته توسط Mr.F</p>
-    </footer>
 </body>
 <script src="./js/main.js"></script>
 
