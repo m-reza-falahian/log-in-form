@@ -10,5 +10,4 @@ This login project is designed so that you can use it customize for your own pro
 2.run this repository on localhost port 7000 with php
 
 # Notes
-* this form is not yet responsive
 * To use this form in your sites you have to make changes to it for example, this project automatically creates a database for itself,but in the real project does not happen by login form.
