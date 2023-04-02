@@ -22,15 +22,15 @@ $create_table = "CREATE TABLE users (id INT AUTO_INCREMENT , username VARCHAR(20
 
 mysqli_query($connect, $create_table);
 
-$add_default_admin = "INSERT INTO users (id ,username , password,role) VALUES (1 ,'admin' , 'a1b2c3' ,'admin') ";
-$add_default_user = "INSERT INTO users (id ,username , password,role) VALUES (2 ,'user' , 'a1b2c3' ,'user') ";
+$add_default_admin = "INSERT INTO users (id ,username , password,role) VALUES (1 ,'admin' , '123456' ,'admin') ";
+$add_default_user = "INSERT INTO users (id ,username , password,role) VALUES (2 ,'user' , '123456' ,'user') ";
 
 mysqli_query($connect, $add_default_admin);
 mysqli_query($connect, $add_default_user);
 
-function select_tb($connect, $tb_n)
+function select_user($connect, $tb_n, $user_name)
 {
-    $do = "SELECT * FROM $tb_n";
-    $result = mysqli_query($connect, $do);
-    return (mysqli_fetch_all($result));
+    $do = "SELECT * FROM $tb_n WHERE username = '$user_name'";
+    $result = $connect->query($do);
+    return ($result->fetch_assoc());
 }

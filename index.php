@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,10 +15,10 @@
     <article class="help-article" id="help-art" title="راهنما">
         <i id="help-art-x" class="bi bi-x-circle-fill help-bi-x" onclick="hide_help_article()" onmouseover="change_help_art_x()" onmouseout="unchange_help_art_x()" title="بستن"></i>
         <h3>راهنما</h3>
-        <p>برای ورود به طورآزمایشی : <br>نام کاربری = user <br> رمز ورود = a1b2c3</p>
+        <p>برای ورود به طورآزمایشی : <br>نام کاربری = user <br> رمز ورود = 123456</p>
         <br>
         <br>
-        <p>برای ورود به طورآزمایشی : <br>نام کاربری = admin <br> رمز ورود = a1b2c3</p>
+        <p>برای ورود به طورآزمایشی : <br>نام کاربری = admin <br> رمز ورود = 123456</p>
     </article>
     <section class="section" onclick="show_help_article()">
         <span id="section-span">راهنما</span>

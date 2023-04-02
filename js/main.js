@@ -7,8 +7,6 @@ function unchange_help_art_x() { help_art_x.className = "bi bi-x-circle-fill hel
 
 var cookies = document.cookie.split(';');
 
-console.log(cookies);
-
 for (var i = 0; i < cookies.length; i++) {
     var cke = cookies[i].trim();
     if (cke == "log_in_status=user_not_found") {
